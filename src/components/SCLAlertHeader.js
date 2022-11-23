@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { View, ViewPropTypes, StyleSheet, Image } from 'react-native'
+import { View, StyleSheet, Image } from 'react-native'
 import images from '../config/images'
 import variables from '../config/variables'
 import { themeType, defaultThemeType } from '../config/types'
+import { ViewPropTypes } from 'deprecated-react-native-prop-types'
 
 SCLAlertHeader.propTypes = {
   headerContainerStyles: ViewPropTypes.style,

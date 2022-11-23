@@ -1,16 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {
-  Animated,
-  Modal,
-  View,
-  ViewPropTypes,
-  StyleSheet,
-  TouchableWithoutFeedback
-} from 'react-native'
+import { Animated, Modal, View, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 import { SCLAlertHeader, SCLAlertTitle, SCLAlertSubtitle } from '../components'
 import { height } from '../helpers/dimensions'
 import variables from './../config/variables'
+import { ViewPropTypes } from 'deprecated-react-native-prop-types'
 
 class SCLAlert extends React.Component {
   static propTypes = {
