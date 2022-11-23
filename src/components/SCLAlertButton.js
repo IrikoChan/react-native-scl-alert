@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native'
 import variables from '../config/variables'
 import { themeType, defaultThemeType } from '../config/types'
-import { ViewPropTypes } from 'deprecated-react-native-prop-types'
+import { ViewPropTypes, TextPropTypes  } from 'deprecated-react-native-prop-types'
 
 SCLAlertButton.propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   containerStyle: ViewPropTypes.style,
-  textStyle: Text.propTypes.style,
+  textStyle: TextPropTypes.style,
   theme: themeType,
   onPress: PropTypes.func.isRequired,
   testID: PropTypes.string

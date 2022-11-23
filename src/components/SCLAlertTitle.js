@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { View, StyleSheet, Text } from 'react-native'
 import variables from '../config/variables'
-import { ViewPropTypes } from 'deprecated-react-native-prop-types'
+import { ViewPropTypes, TextPropTypes } from 'deprecated-react-native-prop-types'
 
 SCLAlertTitle.propTypes = {
   title: PropTypes.string.isRequired,
   titleContainerStyle: ViewPropTypes.style,
-  titleStyle: Text.propTypes.style
+  titleStyle: TextPropTypes.style
 }
 
 SCLAlertTitle.defaultProps = {
